@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Thermostat Controller </title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="main-header">
+            <h1 class="categories"> Thermostat Control Page </h1 class="categories">
+        </header>
+
+        <a href="main.html"> Go to Index </a>
+
+        <div class="categories">
+            <h2> <strong> Control Current Temperature </strong> </h2>
+            <!-- Text input -->
+            <label>Increase or Decrease: </label>
+            <button> + </button>
+            <button> - </button>
+            <br>
+            <label>Set Temperature To: </label>
+            <input type="number" name="temp" placeholder="Enter temperature">
+            <br>
+            <br>
+            <input class="button" type="submit" value="Submit" name="">
+        </div>
+
+        <!--SCHEDULER-->
+        <div class="categories">
+            <h2> <strong> Scheduler </strong> </h2>
+            <form class="my-form">
+                <div class="form-group">
+                    <label>Temp:</label>
+                    <input type="number" name="temp"
+                           placeholder="Enter temperature here">
+                </div>
+
+                <div class="form-group">
+                <label>StartTime</label>
+                    <input type="time" name="startTime" placeholder="Enter time here">
+                </div>
+
+                <div class="form-group">
+                    <label>EndTime</label>
+                    <input type="time" name="endTime" placeholder="Enter time here">
+                </div>
+
+                <p> Optional: </p>
+
+                <div class="form-group">
+                    <label>Day: </label>
+                    <button> S </button>
+                    <button> M </button>
+                    <button> T </button>
+                    <button> W </button>
+                    <button> R </button>
+                    <button> F </button>
+                    <button> S </button>
+                </div>
+
+
+                <div class="form-group">
+                    <label>Specific Date: </label>
+                    <input type="date" placeholder="Optional">
+                </div>
+
+                <input class="button" type="submit" value="Submit" name="">
+
+            </form>
+        </div>
+        <div class="categories">
+            <h2> Current Schedule </h2>
+            <table class="table1">
+                <thead>
+                <tr>
+                    <th> Day </th>
+                    <th> Time </th>
+                    <th> Temperature </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td> M </td>
+                    <td> 10:00 - 12:00 </td>
+                    <td>73</td>
+                </tr>
+                <tr>
+                    <td> M </td>
+                    <td> 10:00 - 12:00 </td>
+                    <td>73</td>
+                </tr>
+                <tr>
+                    <td> M </td>
+                    <td> 10:00 - 12:00 </td>
+                    <td>73</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Adds buffer so I can scroll up -->
+    <div style="margin-top:500px"></div>
+
+</body>
+</html>
